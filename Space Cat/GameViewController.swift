@@ -13,11 +13,13 @@ import GameplayKit
 class GameViewController: UIViewController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         if let view = self.view as! SKView? {
+            
             // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
+            if let scene = SKScene(fileNamed: "TitleScene") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
                 
@@ -25,7 +27,8 @@ class GameViewController: UIViewController {
                 view.presentScene(scene)
             }
             
-            view.ignoresSiblingOrder = true
+            //when false u zPosition is based on when children are added
+            view.ignoresSiblingOrder = false
             
             view.showsFPS = true
             view.showsNodeCount = true
@@ -38,7 +41,7 @@ class GameViewController: UIViewController {
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {
-            return .allButUpsideDown
+            return .landscape
         } else {
             return .all
         }

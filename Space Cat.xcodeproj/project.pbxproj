@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F31C72A2133314200D1B575 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9F31C7292133314200D1B575 /* Sprites.atlas */; };
 		9F393C5D21309BAA00E6678D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F393C5C21309BAA00E6678D /* AppDelegate.swift */; };
 		9F393C5F21309BAA00E6678D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9F393C5E21309BAA00E6678D /* GameScene.sks */; };
 		9F393C6121309BAB00E6678D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9F393C6021309BAB00E6678D /* Actions.sks */; };
@@ -15,9 +16,12 @@
 		9F393C6821309BAB00E6678D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F393C6621309BAB00E6678D /* Main.storyboard */; };
 		9F393C6A21309BB200E6678D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F393C6921309BB200E6678D /* Assets.xcassets */; };
 		9F393C6D21309BB200E6678D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F393C6B21309BB200E6678D /* LaunchScreen.storyboard */; };
+		9F8A9B212131972A0030E302 /* TitleScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9F8A9B202131972A0030E302 /* TitleScene.sks */; };
+		9F8A9B232131973F0030E302 /* TitleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8A9B222131973F0030E302 /* TitleScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F31C7292133314200D1B575 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Sprites.atlas; path = "../../SpaceCat-Assets/Sprites.atlas"; sourceTree = "<group>"; };
 		9F393C5921309BAA00E6678D /* Space Cat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Cat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F393C5C21309BAA00E6678D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F393C5E21309BAA00E6678D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -28,6 +32,8 @@
 		9F393C6921309BB200E6678D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F393C6C21309BB200E6678D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F393C6E21309BB200E6678D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F8A9B202131972A0030E302 /* TitleScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TitleScene.sks; sourceTree = "<group>"; };
+		9F8A9B222131973F0030E302 /* TitleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				9F393C5C21309BAA00E6678D /* AppDelegate.swift */,
+				9F8A9B202131972A0030E302 /* TitleScene.sks */,
+				9F8A9B222131973F0030E302 /* TitleScene.swift */,
 				9F393C5E21309BAA00E6678D /* GameScene.sks */,
-				9F393C6021309BAB00E6678D /* Actions.sks */,
 				9F393C6221309BAB00E6678D /* GameScene.swift */,
+				9F393C6021309BAB00E6678D /* Actions.sks */,
 				9F393C6421309BAB00E6678D /* GameViewController.swift */,
 				9F393C6621309BAB00E6678D /* Main.storyboard */,
+				9F31C7292133314200D1B575 /* Sprites.atlas */,
 				9F393C6921309BB200E6678D /* Assets.xcassets */,
 				9F393C6B21309BB200E6678D /* LaunchScreen.storyboard */,
 				9F393C6E21309BB200E6678D /* Info.plist */,
@@ -105,6 +114,7 @@
 				TargetAttributes = {
 					9F393C5821309BAA00E6678D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -132,10 +142,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F393C6821309BAB00E6678D /* Main.storyboard in Resources */,
+				9F31C72A2133314200D1B575 /* Sprites.atlas in Resources */,
 				9F393C5F21309BAA00E6678D /* GameScene.sks in Resources */,
 				9F393C6A21309BB200E6678D /* Assets.xcassets in Resources */,
 				9F393C6D21309BB200E6678D /* LaunchScreen.storyboard in Resources */,
 				9F393C6121309BAB00E6678D /* Actions.sks in Resources */,
+				9F8A9B212131972A0030E302 /* TitleScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +161,7 @@
 				9F393C6321309BAB00E6678D /* GameScene.swift in Sources */,
 				9F393C6521309BAB00E6678D /* GameViewController.swift in Sources */,
 				9F393C5D21309BAA00E6678D /* AppDelegate.swift in Sources */,
+				9F8A9B232131973F0030E302 /* TitleScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,13 +308,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLCZFAVBGV;
 				INFOPLIST_FILE = "Space Cat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.justpixel.Space-Cat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -313,13 +327,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLCZFAVBGV;
 				INFOPLIST_FILE = "Space Cat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.justpixel.Space-Cat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
