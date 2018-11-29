@@ -30,8 +30,8 @@ class GameViewController: UIViewController {
             //when false u zPosition is based on when children are added
             view.ignoresSiblingOrder = false
             
-            view.showsFPS = true
-            view.showsNodeCount = true
+            view.showsFPS = false
+            view.showsNodeCount = false
         }
     }
 
